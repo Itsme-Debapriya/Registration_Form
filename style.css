@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.929);
+  padding: 40px;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #bf1a5c, #ffffff, #bf1a5c, #ffffff);
+  background-size: 200% 200%;
+  animation: color-change 3s ease infinite;
+  /* perspective: 100px; */
+}
+
+@keyframes color-change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 20px;
+  }
+}
+
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.entries {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.929);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .entries {
+    padding: 20px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+button[type="submit"] {
+  padding: 15px;
+  background-color: #911616f7;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00b187;
+}
+
+@media (max-width: 768px) {
+  button[type="submit"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
